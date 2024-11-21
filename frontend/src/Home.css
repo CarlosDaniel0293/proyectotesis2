@@ -1,0 +1,155 @@
+/* Importar la fuente Comfortaa */
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&display=swap');
+
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Comfortaa', sans-serif; /* Cambiar la fuente */
+    background: linear-gradient(135deg, #1f1f1f, #3e3e3e);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Container */
+.home-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+/* Header */
+.home-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.home-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #ffdd57;
+    font-weight: 700;
+}
+
+.home-header p {
+    font-size: 1.2rem;
+    color: #ddd;
+    font-weight: 300;
+}
+
+/* Academies Section */
+.academies-section {
+    margin-bottom: 40px;
+}
+
+.academies-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #ffa500;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    font-weight: 700;
+}
+
+.academies-list {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.academy-card {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    width: 300px;
+    text-align: center;
+    padding: 15px;
+    transition: transform 0.3s;
+}
+
+.academy-card img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.academy-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    color: #ffa500;
+    font-weight: 700;
+}
+
+.academy-card p {
+    font-size: 1rem;
+    color: #ddd;
+    font-weight: 300;
+}
+
+.academy-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+}
+
+/* Tutorials Section */
+.tutorials-section {
+    margin-bottom: 40px;
+}
+
+.tutorials-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #32cd32;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    font-weight: 700;
+}
+
+.tutorials-list {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.tutorial-card {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    width: 300px;
+    text-align: center;
+    padding: 15px;
+    transition: transform 0.3s;
+}
+
+.tutorial-card img {
+    width: 100%;
+    height: 150px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.tutorial-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    color: #32cd32;
+    font-weight: 700;
+}
+
+.tutorial-card p {
+    font-size: 1rem;
+    color: #ddd;
+    font-weight: 300;
+}
+
+.tutorial-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+}

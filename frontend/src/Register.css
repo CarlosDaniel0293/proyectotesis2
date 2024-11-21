@@ -1,0 +1,155 @@
+/* General Background */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #000000, #434343);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    width: 100%;
+    max-width: none;
+}
+
+/* Form Container */
+.register-container {
+    width: 100% !important; /* Ocupa el 90% del espacio disponible */
+    max-width: 1200px !important; /* Incrementa el tamaño máximo */
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    animation: fadeIn 1s ease-in-out;
+    margin: 0 auto;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 12px;
+    box-sizing: border-box; /* Para evitar problemas de tamaño */
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+
+/* Title */
+.form-title {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 2.2em; /* Aumenté el tamaño del título */
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #ffffff;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* Form Group */
+.register-form .form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    font-size: 1.1em; /* Aumenté ligeramente el tamaño de fuente */
+    color: #ffffff;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1em;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.6);
+    outline: none;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    background-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+/* Submit Button */
+.form-button {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background: linear-gradient(90deg, #007BFF, #0056b3);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.form-button:hover {
+    background: linear-gradient(90deg, #0056b3, #003f7f);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+/* Form Message */
+.form-message {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 0.9em;
+    color: #FF6B6B;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Navigation Links */
+nav {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 30px;
+    font-size: 1.1em;
+    color: #fff;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.1);
+    transition: background 0.3s, transform 0.2s;
+}
+
+nav a:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}

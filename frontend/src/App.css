@@ -1,0 +1,19 @@
+/* General Style for Navigation Buttons */
+nav a {
+  text-decoration: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  background: linear-gradient(90deg, #ffffff, #0056b3);
+  color: white;
+  font-weight: bold;
+  font-size: 1.2em;
+  text-align: center;
+  display: block;
+  transition: background 0.3s, transform 0.2s;
+}
+
+nav a:hover {
+  background: linear-gradient(90deg, #ffffff, #003f7f);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}

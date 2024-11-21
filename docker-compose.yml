@@ -1,0 +1,35 @@
+version: '3.8'
+
+services:
+  api-auth:
+    build:
+      context: ./api-auth
+    restart: always
+    ports:
+      - "3000:3000"
+    networks:
+      - backend-auth
+    depends_on:
+      - db-psql
+
+  db-psql:
+    image: postgres:15-alpine
+    environment:
+      - POSTGRES_PASSWORD=c0tras3naS3gur@
+      - POSTGRES_DB=tecsup
+    networks:
+      - backend-auth
+
+  frontend:
+    build:
+      context: ./frontend
+    restart: always
+    ports:
+      - "3001:80"
+    networks:
+      - backend-auth
+    depends_on:
+      - api-auth
+
+networks:
+  backend-auth:
